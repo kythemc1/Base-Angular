@@ -1,0 +1,15 @@
+<script src="../libs/mushroom.api.def.js" ng-if="true"></script>
+<div data-ng-include="'/app/partials/header.html'" data-ng-controller="headerController"
+  class="page-header navbar navbar-fixed-top navbar-static-top"></div>
+<div class="clearfix"> </div>
+<div class="page-container">
+  <div data-ng-include="'/app/partials/page-sidebar.html'" data-ng-controller="pageSidebarController"
+    class="page-sidebar-wrapper">
+  </div>
+  <div class="page-content-wrapper">
+    <div class="page-content">
+      <div id="admin-page" ui-view>
+      </div>
+    </div>
+  </div>
+</div>

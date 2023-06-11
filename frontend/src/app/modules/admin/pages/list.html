@@ -1,0 +1,48 @@
+<div class="portlet light bordered" id="{{module}}-page">
+  <div class="portlet-title">
+    <div class="caption">
+      <span class="caption-subject bold uppercase">
+        {{'c_list' | translate}} {{module | translate}}
+      </span>
+    </div>
+  </div>
+  <div class="portlet-body">
+
+    <div class="row">
+      <div class="col-md-12 padding-bottom-5">
+        <div class="panel panel-default">
+          <div class="panel-heading hidden">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse_1"
+                aria-expanded="true" target="_self">
+                {{'c_filter' | translate}}
+              </a>
+            </h4>
+          </div>
+          <div id="collapse_1" class="panel-collapse collapse" aria-expanded="true">
+            <div class="panel-body">
+              <form my-form create-function="search()" allow-submit-enter>
+                <div class="form-body form-horizontal padding-right-15 padding-left-15">
+
+                  <my-attribute m-scope="currentScope" m-attribute="attrSearch" m-module="{{module}}"
+                    m-model="{{modelSearch}}"></my-attribute>
+
+                  <div class="row padding-bottom-5 text-center">
+                    <my-button-create m-text="{{'c_search' | translate}}"></my-button-create>
+                    <button type="button" class="btn btn-sm btn-default dt-button"
+                      ng-click="clearSearch()">{{'c_delete' | translate}}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <my-table m-config="config" id="{{module}}-table" m-search="dataSearch">
+    </my-table>
+  </div>
+</div>
+
+<div data-ng-include="'/app/modules/admin/pages/modal-form.html'" ng-if="config.allowOpenModal"></div>

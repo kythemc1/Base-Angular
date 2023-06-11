@@ -1,0 +1,88 @@
+.login-page {
+  background: #e7ecf1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login-page .logo {
+  margin: 60px auto 20px auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.login-page .form-title {
+  font-weight: 300;
+}
+
+.login-page .content2 {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  padding: 0px;
+  border-radius: 7px;
+  margin-top: 70px;
+  flex: 1 0 auto;
+  box-shadow: #ccc 7px 9px 12px 0px;
+}
+
+.login-page .content2 .content2-login {
+  border-radius: 7px 7px 7px 7px;
+  background: #fff;
+  padding: 15px;
+}
+
+.login-page .content2 .content2-info {
+  border-radius: 0px 7px 7px 0px;
+}
+
+.login-page .content2 h3 {
+  color: #000;
+}
+
+.login-page .content2 h4 {
+  color: #555;
+}
+
+.login-page .content2 p {
+  color: #222;
+}
+
+.login-page .content2 .input-icon input {
+  border-left: 2px solid #44B6AE !important;
+}
+
+.login-page .rememberme {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-page input {
+  border-left: 0;
+}
+
+.login-page .footer {
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 20px;
+  background-size: unset;
+  background-image: unset;
+  color: #fff;
+  border-top: 2px solid #444;
+}
+
+.login-page .footer .footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.login-page .footer .footer-content a {
+  color: #fff;
+}
+
+.background-page {
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-color: #3D4A53;
+}

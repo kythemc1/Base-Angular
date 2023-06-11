@@ -1,0 +1,18 @@
+﻿{
+  "sProcessing": "Đang xử lý...",
+  "sLengthMenu": "Số hàng _MENU_",
+  "sZeroRecords": "Không tìm thấy dòng nào phù hợp",
+  "sInfo": "Hiển thị _START_-_END_ trong tổng số _TOTAL_ kết quả",
+  "sInfoEmpty": "Đang xem 0 đến 0 trong tổng số 0 mục",
+  "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+  "sInfoPostFix": "",
+  "sSearch": "<b>Tìm kiếm</b>",
+  "searchPlaceholder": "Nhập từ khóa",
+  "sUrl": "",
+  "oPaginate": {
+    "first": "Đầu",
+    "previous": "<",
+    "next": ">",
+    "last": "Cuối"
+  }
+}

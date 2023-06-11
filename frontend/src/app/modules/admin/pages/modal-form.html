@@ -1,0 +1,42 @@
+<div id="{{module}}-modal" tabindex="-1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span type="button" class="modal-title-close2" data-dismiss="modal">
+          <i class="fa fa-close fa-2x"></i>
+        </span>
+        <h4 class="col-md-11 padding-left-0 modal-title uppercase" ng-if="viewMode == 'create'">
+          {{'c_create' | translate}}
+          {{module | translate}}
+        </h4>
+        <h4 class="col-md-11 padding-left-0 modal-title uppercase" ng-if="viewMode == 'update'">
+          {{'c_update' | translate}}
+          {{module | translate}}
+        </h4>
+        <h4 class="col-md-11 padding-left-0 modal-title uppercase" ng-if="viewMode == 'detail'">
+          {{'c_detail' | translate}}
+          {{module | translate}}
+        </h4>
+      </div>
+      
+      <div class="content-scroll">
+        <div class="modal-body clearfix">
+          <form my-form update-function="update()" create-function="create()">
+            <div class="form-body form-horizontal">
+
+              <my-attribute m-scope="currentScope" m-attribute="attrForm" m-module="{{module}}" m-model="{{modelForm}}">
+              </my-attribute>
+
+              <div class="form-actions text-center">
+                <my-button-create ng-if="viewMode == 'create'"></my-button-create>
+                <my-button-update ng-if="viewMode == 'update'"></my-button-update>
+                <my-button-cancel data-dismiss="modal" m-text="{{'c_close' | translate}}"></my-button-cancel>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

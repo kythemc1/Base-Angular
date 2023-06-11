@@ -1,0 +1,67 @@
+<div class="content2 clearfix">
+  <!-- BEGIN LOGIN FORM -->
+  <div class="content2-login clearfix">
+    <div class="text-center margin-bottom-15">
+      <a href="" onclick="return false">
+        <img src="{{$settings.imgPath}}/siten_logo.png" height="100" />
+      </a>
+    </div>
+    <div class="col-md-12">
+      <div class="text-danger text-center">{{messageErr}}</div>
+    </div>
+
+    <form my-form create-function="login()" allow-submit-enter>
+      <div class="form-body form-horizontal clearfix padding-left-15 padding-right-15">
+        <div class="col-md-12 margin-bottom-15 margin-top-15">
+          <!-- <div class="form-group form-md-line-input has-success">
+            <input type="text" class="form-control" placeholder="{{'login_account' | translate}}"
+              ng-model="dataForm.account" name="account" required>
+            <label style="left:0;right:0"></label>
+          </div> -->
+          <div class="form-group">
+              <div class="input-icon right">
+                  <i class="fa fa-envelope-o"></i>
+                  <input type="text" class="form-control" placeholder="{{'login_account' | translate}}"
+                  ng-model="dataForm.account" name="account" required> </div>
+          </div>
+          
+        </div>
+        <div class="col-md-12 margin-bottom-15">
+          <!-- <div class="form-group form-md-line-input has-success">
+            <input type="password" class="form-control" placeholder="{{'login_password' | translate}}"
+              ng-model="dataForm.password" name="password" required>
+            <label style="left:0;right:0"></label>
+          </div> -->
+          <div class="form-group">
+              <div class="input-icon right">
+                  <i class="fa fa-key"></i>
+                  <input type="password" class="form-control" placeholder="{{'login_password' | translate}}"
+                  ng-model="dataForm.password" name="password" required> </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <div class="md-checkbox">
+              <input type="checkbox" class="md-check" id="remember" ng-model="dataForm.remember" name="remember">
+              <label for="remember">
+                <span class="inc"></span>
+                <span class="check"></span>
+                <span class="box"></span> {{'login_remember' | translate}} </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="form-group text-center">
+            <div class="form-actions">
+              <my-button-create m-text="{{'login' | translate}}" m-class="green-meadow width-100 btn-md"></my-button-create>
+              <!-- <my-ladda-button  m-text="{{'login' | translate}}" m-class="red" ng-click="abc()"></my-ladda-button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- END LOGIN FORM -->
+</div>

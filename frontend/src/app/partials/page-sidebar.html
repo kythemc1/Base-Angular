@@ -1,0 +1,90 @@
+<div class="page-sidebar navbar-collapse collapse page-sidebar-menu-light">
+  <!-- menu cấp 1 -->
+  <ul id="scroll-sidebar" app-sidebar
+    class="page-sidebar-menu page-sidebar-menu-compact page-sidebar-menu-click-submenu scroll"
+    data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+
+    <li class="nav-item" ng-repeat="item in MyInfo.menuConfig"
+      ng-class="{'active': item.state == $state.current.name || item.activeState && item.activeState.indexOf($state.current.name) >=0 }"
+      ng-if="item.visible || MyInfo.menuConfig.showHiddenItem">
+
+      <a class="nav-link" ng-if="!item.childItems && item.state" ui-sref="{{item.state}}"
+        ng-class="{disabled:!item.visible}">
+        <span><i class="{{ item.iconClass }}" ng-if="item.iconClass"></i></span>
+        <span class="title">{{ item.title }}</span>
+      </a>
+
+      <a class="nav-link" ng-if="!item.childItems && !item.state" ng-class="{disabled:!item.visible}">
+        <span><i class="{{ item.iconClass }}" ng-if="item.iconClass"></i></span>
+        <span class="title">{{ item.title }}</span>
+      </a>
+
+      <a class="nav-link nav-toggle" ng-if="item.childItems" ng-class="{disabled:!item.visible}">
+        <span><i class="{{ item.iconClass }}" ng-if="item.iconClass"></i></span>
+        <span class="title">{{ item.title }}</span>
+        <span class="arrow"></span>
+      </a>
+
+      <!-- menu cấp 2 -->
+      <ul class="sub-menu" ng-if="item.childItems">
+
+        <li class="nav-item" ng-repeat="subItem in item.childItems"
+          ng-class="{'active': subItem.state == $state.current.name || subItem.activeState && subItem.activeState.indexOf($state.current.name) >=0 }"
+          ng-if="subItem.visible || MyInfo.menuConfig.showHiddenItem">
+
+          <a class="nav-link" ng-if="!subItem.childItems && subItem.state" ui-sref="{{ subItem.state }}"
+            ng-class="{disabled:!subItem.visible}">
+            <span><i class="fa fa-blank" ng-if="!subItem.iconClass"></i></span>
+            <span><i class="{{ subItem.iconClass }}" ng-if="subItem.iconClass"></i></span>
+            {{ subItem.title }}
+          </a>
+
+          <a class="nav-link" ng-if="!subItem.childItems && !subItem.state" ng-class="{disabled:!subItem.visible}">
+            <span><i class="fa fa-blank" ng-if="!subItem.iconClass"></i></span>
+            <span><i class="{{ subItem.iconClass }}" ng-if="subItem.iconClass"></i></span>
+            {{ subItem.title }}
+          </a>
+
+          <a class="nav-link nav-toggle" ng-if="subItem.childItems" ng-class="{disabled:!subItem.visible}">
+            <span><i class="fa fa-blank" ng-if="!subItem.iconClass"></i></span>
+            <span><i class="{{ subItem.iconClass }}" ng-if="subItem.iconClass"></i></span>
+            {{ subItem.title }} <span class="arrow"></span>
+          </a>
+
+          <!-- menu cấp 3 -->
+          <ul class="sub-menu" ng-if="subItem.childItems">
+
+            <li class="nav-item" ng-repeat="sub2Item in subItem.childItems"
+              ng-class="{'active': sub2Item.state == $state.current.name || sub2Item.activeState && sub2Item.activeState.indexOf($state.current.name) >=0 }"
+              ng-if="sub2Item.visible || MyInfo.menuConfig.showHiddenItem">
+
+              <a class="nav-link" ng-if="sub2Item.state" ui-sref="{{ sub2Item.state }}"
+                ng-class="{disabled:!sub2Item.visible}">
+                <span ng-if="!sub2Item.iconClass" class="padding-left-5"><i class="fa fa-blank icon-cap3"></i><i
+                    class="fa fa-blank"></i></span>
+                <span ng-if="sub2Item.iconClass" class="padding-left-5"><i class="fa fa-blank icon-cap3"></i><i
+                    class="{{ sub2Item.iconClass }}"></i></span>
+                {{ sub2Item.title }}
+              </a>
+
+              <a class="nav-link" ng-if="!sub2Item.state" ng-class="{disabled:!sub2Item.visible}">
+                <span ng-if="!sub2Item.iconClass" class="padding-left-5"><i class="fa fa-blank icon-cap3"></i><i
+                    class="fa fa-blank"></i></span>
+                <span ng-if="sub2Item.iconClass" class="padding-left-5"><i class="fa fa-blank icon-cap3"></i><i
+                    class="{{ sub2Item.iconClass }}"></i></span>
+                {{ sub2Item.title }}
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </li>
+
+  </ul>
+
+</div>

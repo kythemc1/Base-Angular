@@ -1,0 +1,78 @@
+[{
+    "outputFileName": "src/libs/vendor.css",
+    "inputFiles": [
+      "src/assets/global/plugins/bootstrap/css/bootstrap.css",
+      "src/assets/global/plugins/nprogress/nprogress.css",
+      "src/assets/global/plugins/datatables/datatables.min.css",
+      "src/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css",
+      "src/assets/global/plugins/select2/css/select2.min.css",
+      "src/assets/global/plugins/select2/css/select2-bootstrap.min.css",
+      "src/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css",
+      "src/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css",
+      "src/assets/global/plugins/bootstrap-toastr/toastr.min.css",
+      "src/assets/global/plugins/bootstrap-sweetalert/sweetalert.css",
+      "src/assets/global/plugins/jquery-ui/jquery-ui.min.css",
+      "src/assets/global/css/components-md.css",
+      "src/assets/global/css/plugins-md.css",
+      "src/assets/global/css/customPlugin.css",
+      "src/assets/layouts/layout2/css/layout.css",
+      "src/assets/layouts/layout2/css/themes/light.css",      
+      "src/assets/global/plugins/tooltip/tooltipster.bundle.css",
+      "src/assets/global/plugins/tooltip/tooltipster-sideTip-light.min.css",
+      "src/assets/global/plugins/ladda/ladda-themeless.min.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  },
+  {
+    "outputFileName": "src/libs/vendor.js",
+    "inputFiles": [
+      "src/assets/global/plugins/jquery.min.js",
+      "src/assets/global/plugins/jquery-cookie/jquery.cookie.js",
+      "src/assets/global/plugins/bootstrap/js/bootstrap.min.js",
+      "src/assets/global/plugins/nprogress/nprogress.js",
+      "src/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
+      "src/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+      "src/assets/global/plugins/jquery.blockui.min.js",
+      "src/assets/global/plugins/js.cookie.min.js",
+      "src/assets/global/plugins/jquery-ui/jquery-ui.min.js",
+      "src/assets/global/plugins/angularjs/angular.min.js",
+      "src/assets/global/plugins/angularjs/angular-sanitize.min.js",
+      "src/assets/global/plugins/angularjs/angular-touch.min.js",
+      "src/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js",
+      "src/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js",
+      "src/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js",
+      "src/assets/global/plugins/angularjs-plugin/lodash.min.js",
+      "src/assets/global/plugins/angularjs-plugin/angular-translate.min.js",
+      "src/assets/global/plugins/angularjs-plugin/restangular.min.js",
+      "node_modules/angular-deferred-bootstrap/angular-deferred-bootstrap.min.js",
+      "src/assets/global/scripts/app.js",
+      "src/assets/layouts/layout2/scripts/layout.js",
+      "src/assets/global/plugins/datatables/datatables.all.min.js",
+      "src/assets/global/scripts/datatable.js",
+      "src/assets/global/plugins/datatables/select.datatable.min.js",
+      "src/assets/global/plugins/select2/js/select2.full.min.js",
+      "src/assets/global/plugins/jquery-validation/js/jquery.validate.js",
+      "src/assets/global/plugins/jquery-validation/js/additional-methods.js",
+      "src/assets/global/plugins/moment.min.js",
+      "src/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js",
+      "src/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js",
+      "src/assets/global/plugins/bootstrap-toastr/toastr.min.js",
+      "src/assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js",      
+      "src/assets/global/plugins/sheetjs/FileSaver.min.js",
+      "src/assets/global/plugins/jquery.table2excel.js",
+      "src/assets/global/plugins/tooltip/tooltipster.bundle.js",
+      "src/assets/global/plugins/jQuery.print.js",
+      "src/assets/global/plugins/htmltopdf/html2canvas.min.js",
+      "src/assets/global/plugins/htmltopdf/jspdf.min.js",
+      "src/assets/global/plugins/canvasjs/canvasjs.min.js",
+      "src/assets/global/plugins/ladda/spin.min.js",
+      "src/assets/global/plugins/ladda/ladda.min.js"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "sourceMap": true
+  }
+]

@@ -1,0 +1,29 @@
+<div class="portlet light bordered" id="{{module}}-page">
+  <div class="portlet-title">
+    <div class="caption">
+      <span class="caption-subject bold uppercase" ng-if="viewMode == 'create'"> {{'c_create' | translate}}
+        {{module | translate}}
+      </span>
+      <span class="caption-subject bold uppercase" ng-if="viewMode == 'update'"> {{'c_update' | translate}}
+        {{module | translate}}
+      </span>
+      <span class="caption-subject bold uppercase" ng-if="viewMode == 'detail'"> {{'c_detail' | translate}}
+        {{module | translate}}
+      </span>
+    </div>
+  </div>
+  <div class="portlet-body">
+    <form my-form update-function="update()" create-function="create()" cancel-function="gotolist()">
+      <div class="form-body form-horizontal">
+        
+        <my-attribute m-scope="currentScope" m-attribute="attrForm" m-module="{{module}}" m-model="{{modelForm}}"></my-attribute>
+
+        <div class="form-group form-actions text-center">
+          <my-button-create ng-if="viewMode == 'create'"></my-button-create>
+          <my-button-update ng-if="viewMode == 'update'"></my-button-update>
+          <my-button-cancel m-text="{{'c_back' | translate}}"></my-button-cancel>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

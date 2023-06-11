@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "src/assets/global/scripts/app.es5.js",
+    "inputFile": "src/assets/global/scripts/app.js"
+  },
+  {
+    "outputFile": "src/assets/global/plugins/datatables/dataTables.editor.es5.js",
+    "inputFile": "src/assets/global/plugins/datatables/dataTables.editor.js"
+  },
+  {
+    "outputFile": "src/app/index.css",
+    "inputFile": "src/app/index.scss"
+  }
+]
